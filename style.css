@@ -76,7 +76,7 @@ header{
     background: #ff5dc1;
     color: #162938;
 }
-.wrapper{
+.wrapper {
     position: relative;
     width: 400px;
     height: 400px;
@@ -91,7 +91,9 @@ header{
     overflow: hidden;
     transform: scale(0);
     transition: transform .5s ease, height .2s ease;
+    margin-top: 70px; 
 }
+
 
 .wrapper.active-popup{
     transform: scale(1);
@@ -126,8 +128,13 @@ header{
 
 .wrapper .form-box.register{
     position: absolute;
+    
     transform: translateX(400px);
     transition: none;
+    -webkit-transform: translateX(400px);
+    -moz-transform: translateX(400px);
+    -ms-transform: translateX(400px);
+    -o-transform: translateX(400px);
 }
 
 .wrapper.active .form-box.register{
